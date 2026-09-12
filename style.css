@@ -1,0 +1,553 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Poppins", sans-serif;
+background: #f8f6f1;
+color: #2d2a26;
+line-height: 1.6;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+```
+padding: 22px 8%;
+
+background: #ffffff;
+
+position: sticky;
+top: 0;
+
+z-index: 1000;
+
+box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+```
+
+}
+
+.logo {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 30px;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+```
+
+}
+
+.logo span {
+font-weight: 400;
+}
+
+nav a {
+text-decoration: none;
+
+```
+color: #2d2a26;
+
+margin-left: 28px;
+
+font-size: 14px;
+
+transition: 0.3s;
+```
+
+}
+
+nav a:hover {
+color: #a47c48;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+min-height: 78vh;
+
+```
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+text-align: center;
+
+padding: 50px 20px;
+
+background:
+    linear-gradient(
+        rgba(248, 246, 241, 0.92),
+        rgba(248, 246, 241, 0.97)
+    );
+```
+
+}
+
+.hero-content {
+max-width: 760px;
+}
+
+.subtitle {
+font-size: 12px;
+
+```
+letter-spacing: 3px;
+
+color: #a47c48;
+
+margin-bottom: 15px;
+```
+
+}
+
+.hero h1 {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 72px;
+
+line-height: 1.05;
+
+margin-bottom: 25px;
+```
+
+}
+
+.hero p {
+font-size: 17px;
+
+```
+color: #666;
+
+margin-bottom: 35px;
+```
+
+}
+
+.shop-button {
+display: inline-block;
+
+```
+padding: 14px 30px;
+
+background: #2d2a26;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 4px;
+
+transition: 0.3s;
+```
+
+}
+
+.shop-button:hover {
+background: #a47c48;
+}
+
+/* =========================
+SHOP
+========================= */
+
+.shop {
+padding: 90px 8%;
+}
+
+.section-title {
+text-align: center;
+
+```
+margin-bottom: 55px;
+```
+
+}
+
+.section-title p {
+font-size: 12px;
+
+```
+letter-spacing: 3px;
+
+color: #a47c48;
+```
+
+}
+
+.section-title h2 {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 50px;
+
+margin-top: 8px;
+```
+
+}
+
+.section-title span {
+display: block;
+
+```
+width: 50px;
+
+height: 2px;
+
+background: #a47c48;
+
+margin: 15px auto;
+```
+
+}
+
+/* =========================
+PERFUME GRID
+========================= */
+
+.perfume-grid {
+display: grid;
+
+```
+grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+gap: 30px;
+```
+
+}
+
+/* =========================
+PERFUME CARD
+========================= */
+
+.perfume-card {
+background: #ffffff;
+
+```
+padding: 30px;
+
+border-radius: 8px;
+
+box-shadow:
+    0 5px 25px rgba(0, 0, 0, 0.06);
+
+transition: 0.3s;
+```
+
+}
+
+.perfume-card:hover {
+transform: translateY(-6px);
+
+```
+box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.09);
+```
+
+}
+
+.perfume-name {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 34px;
+
+margin-bottom: 5px;
+```
+
+}
+
+.perfume-style {
+color: #a47c48;
+
+```
+font-size: 13px;
+
+letter-spacing: 1px;
+
+margin-bottom: 20px;
+```
+
+}
+
+.perfume-card > p {
+font-size: 14px;
+
+```
+color: #666;
+```
+
+}
+
+/* =========================
+INFORMATION
+========================= */
+
+.info-section {
+margin-top: 22px;
+}
+
+.info-title {
+font-weight: 600;
+
+```
+margin-bottom: 7px;
+```
+
+}
+
+.info-section p {
+font-size: 14px;
+
+```
+color: #666;
+
+margin-bottom: 4px;
+```
+
+}
+
+/* =========================
+PRICE
+========================= */
+
+.price-table {
+margin-top: 22px;
+
+```
+border-top: 1px solid #eee;
+```
+
+}
+
+.price-row {
+display: flex;
+
+```
+justify-content: space-between;
+
+padding: 11px 0;
+
+border-bottom: 1px solid #eee;
+
+font-size: 14px;
+```
+
+}
+
+.price {
+font-weight: 600;
+
+```
+color: #2d2a26;
+```
+
+}
+
+/* =========================
+AVAILABILITY
+========================= */
+
+.availability {
+margin-top: 20px;
+
+```
+font-size: 14px;
+
+font-weight: 500;
+```
+
+}
+
+.available {
+color: #4d8b58;
+}
+
+.unavailable {
+color: #c44;
+}
+
+/* =========================
+WHATSAPP
+========================= */
+
+.whatsapp-button {
+display: block;
+
+```
+text-align: center;
+
+margin-top: 22px;
+
+padding: 13px;
+
+background: #2d2a26;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 4px;
+
+transition: 0.3s;
+```
+
+}
+
+.whatsapp-button:hover {
+background: #a47c48;
+}
+
+/* =========================
+ABOUT
+========================= */
+
+.about {
+padding: 90px 8%;
+
+```
+background: #ebe6dc;
+
+text-align: center;
+```
+
+}
+
+.about-content {
+max-width: 700px;
+
+```
+margin: auto;
+```
+
+}
+
+.about h2 {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 48px;
+
+margin-bottom: 20px;
+```
+
+}
+
+.about p {
+color: #666;
+
+```
+margin-bottom: 12px;
+```
+
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+text-align: center;
+
+```
+padding: 45px 20px;
+
+background: #2d2a26;
+
+color: white;
+```
+
+}
+
+footer h3 {
+font-family: "Cormorant Garamond", serif;
+
+```
+font-size: 28px;
+
+letter-spacing: 2px;
+```
+
+}
+
+footer p {
+margin-top: 10px;
+
+```
+font-size: 14px;
+
+color: #ddd;
+```
+
+}
+
+.copyright {
+margin-top: 25px;
+
+```
+font-size: 12px;
+```
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+```
+header {
+    padding: 18px 6%;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav {
+    display: none;
+}
+
+.hero {
+    min-height: 70vh;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 15px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+}
+
+.about h2 {
+    font-size: 40px;
+}
+```
+
+}
