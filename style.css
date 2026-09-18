@@ -1,343 +1,388 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
+/* ================================
+   RESET
+================================ */
 
-html {
-scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/* ================================
+   BODY
+================================ */
 
 body {
-font-family: "Poppins", sans-serif;
-background: #f8f6f1;
-color: #2d2a26;
-line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    background: #faf9f6;
+    color: #2d2a26;
+    line-height: 1.6;
 }
 
-/* =========================
-HEADER
-========================= */
+
+/* ================================
+   HEADER
+================================ */
 
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
+    width: 100%;
+    padding: 22px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-```
-padding: 22px 8%;
+    background: #ffffff;
 
-background: #ffffff;
+    border-bottom: 1px solid #eeeeea;
 
-position: sticky;
-top: 0;
-
-z-index: 1000;
-
-box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-```
-
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+
+/* LOGO */
+
 .logo {
-font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 30px;
+    font-size: 30px;
+    font-weight: 700;
 
-font-weight: 700;
+    letter-spacing: 2px;
 
-letter-spacing: 2px;
-```
-
+    color: #2d2a26;
 }
 
 .logo span {
-font-weight: 400;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    gap: 35px;
 }
 
 nav a {
-text-decoration: none;
+    text-decoration: none;
 
-```
-color: #2d2a26;
+    color: #55514b;
 
-margin-left: 28px;
+    font-size: 14px;
+    font-weight: 500;
 
-font-size: 14px;
-
-transition: 0.3s;
-```
-
+    transition: 0.3s ease;
 }
 
 nav a:hover {
-color: #a47c48;
+    color: #a07c45;
 }
 
-/* =========================
-HERO
-========================= */
+
+/* ================================
+   HERO
+================================ */
 
 .hero {
-min-height: 78vh;
+    min-height: 75vh;
 
-```
-display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-align-items: center;
+    text-align: center;
 
-justify-content: center;
+    padding: 80px 20px;
 
-text-align: center;
-
-padding: 50px 20px;
-
-background:
-    linear-gradient(
-        rgba(248, 246, 241, 0.92),
-        rgba(248, 246, 241, 0.97)
-    );
-```
-
+    background:
+        linear-gradient(
+            rgba(250, 249, 246, 0.88),
+            rgba(250, 249, 246, 0.95)
+        );
 }
 
 .hero-content {
-max-width: 760px;
+    max-width: 750px;
 }
+
+
+/* HERO SUBTITLE */
 
 .subtitle {
-font-size: 12px;
+    font-size: 13px;
 
-```
-letter-spacing: 3px;
+    letter-spacing: 4px;
 
-color: #a47c48;
+    font-weight: 500;
 
-margin-bottom: 15px;
-```
+    color: #a07c45;
 
+    margin-bottom: 15px;
 }
+
+
+/* HERO TITLE */
 
 .hero h1 {
-font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 72px;
+    font-size: clamp(50px, 7vw, 85px);
 
-line-height: 1.05;
+    line-height: 1.05;
 
-margin-bottom: 25px;
-```
+    font-weight: 600;
 
+    margin-bottom: 25px;
+
+    color: #292621;
 }
 
-.hero p {
-font-size: 17px;
 
-```
-color: #666;
+/* HERO DESCRIPTION */
 
-margin-bottom: 35px;
-```
+.hero p:not(.subtitle) {
+    max-width: 570px;
 
+    margin: 0 auto 35px;
+
+    color: #6f6a62;
+
+    font-size: 15px;
 }
+
+
+/* SHOP BUTTON */
 
 .shop-button {
-display: inline-block;
+    display: inline-block;
 
-```
-padding: 14px 30px;
+    padding: 14px 30px;
 
-background: #2d2a26;
+    background: #2d2a26;
 
-color: white;
+    color: #ffffff;
 
-text-decoration: none;
+    text-decoration: none;
 
-border-radius: 4px;
+    font-size: 13px;
 
-transition: 0.3s;
-```
+    letter-spacing: 1px;
 
+    transition: 0.3s ease;
 }
 
 .shop-button:hover {
-background: #a47c48;
+    background: #a07c45;
 }
 
-/* =========================
-SHOP
-========================= */
+
+/* ================================
+   SHOP SECTION
+================================ */
 
 .shop {
-padding: 90px 8%;
+    padding: 100px 7%;
 }
 
+
+/* SECTION TITLE */
+
 .section-title {
-text-align: center;
+    text-align: center;
 
-```
-margin-bottom: 55px;
-```
-
+    margin-bottom: 60px;
 }
 
 .section-title p {
-font-size: 12px;
+    font-size: 12px;
 
-```
-letter-spacing: 3px;
+    letter-spacing: 4px;
 
-color: #a47c48;
-```
+    color: #a07c45;
 
+    margin-bottom: 8px;
 }
 
 .section-title h2 {
-font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 50px;
+    font-size: 50px;
 
-margin-top: 8px;
-```
+    font-weight: 600;
 
+    color: #292621;
 }
 
 .section-title span {
-display: block;
+    display: block;
 
-```
-width: 50px;
+    width: 55px;
+    height: 1px;
 
-height: 2px;
+    background: #a07c45;
 
-background: #a47c48;
-
-margin: 15px auto;
-```
-
+    margin: 18px auto 0;
 }
 
-/* =========================
-PERFUME GRID
-========================= */
+
+/* ================================
+   PERFUME GRID
+================================ */
 
 .perfume-grid {
-display: grid;
+    display: grid;
 
-```
-grid-template-columns:
-    repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
 
-gap: 30px;
-```
+    gap: 35px;
 
+    max-width: 1400px;
+
+    margin: 0 auto;
 }
 
-/* =========================
-PERFUME CARD
-========================= */
+
+/* ================================
+   PERFUME CARD
+================================ */
 
 .perfume-card {
-background: #ffffff;
+    background: #ffffff;
 
-```
-padding: 30px;
+    border: 1px solid #ece9e3;
 
-border-radius: 8px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 
-box-shadow:
-    0 5px 25px rgba(0, 0, 0, 0.06);
-
-transition: 0.3s;
-```
-
+    overflow: hidden;
 }
 
 .perfume-card:hover {
-transform: translateY(-6px);
+    transform: translateY(-5px);
 
-```
-box-shadow:
-    0 12px 30px rgba(0, 0, 0, 0.09);
-```
-
+    box-shadow:
+        0 15px 35px rgba(40, 35, 28, 0.08);
 }
 
-.perfume-name {
-font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 34px;
+/* ================================
+   PERFUME IMAGE
+================================ */
 
-margin-bottom: 5px;
-```
+.perfume-image {
+    width: 100%;
 
+    height: 320px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: #f7f6f2;
+
+    padding: 25px;
 }
 
-.perfume-style {
-color: #a47c48;
+.perfume-image img {
+    width: 100%;
+    height: 100%;
 
-```
-font-size: 13px;
+    object-fit: contain;
 
-letter-spacing: 1px;
-
-margin-bottom: 20px;
-```
-
+    display: block;
 }
 
-.perfume-card > p {
-font-size: 14px;
 
-```
-color: #666;
-```
+/* ================================
+   PERFUME CONTENT
+================================ */
 
+.perfume-content {
+    padding: 28px;
 }
 
-/* =========================
-INFORMATION
-========================= */
 
-.info-section {
-margin-top: 22px;
+/* PERFUME NAME */
+
+.perfume-content h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 32px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    color: #292621;
+
+    margin-bottom: 25px;
 }
 
-.info-title {
-font-weight: 600;
 
-```
-margin-bottom: 7px;
-```
+/* ================================
+   INFORMATION SECTIONS
+================================ */
 
+.perfume-info {
+    border-top: 1px solid #eeeae3;
+
+    padding: 18px 0;
 }
 
-.info-section p {
-font-size: 14px;
+.perfume-info h4,
+.price-section h4 {
+    font-size: 12px;
 
-```
-color: #666;
+    text-transform: uppercase;
 
-margin-bottom: 4px;
-```
+    letter-spacing: 1.5px;
 
+    color: #a07c45;
+
+    margin-bottom: 9px;
+
+    font-weight: 600;
 }
 
-/* =========================
-PRICE
-========================= */
+.perfume-info p {
+    font-size: 13px;
 
-.price-table {
-margin-top: 22px;
+    color: #68635c;
 
-```
-border-top: 1px solid #eee;
-```
+    line-height: 1.7;
 
+    margin-bottom: 5px;
+}
+
+.perfume-info p:last-child {
+    margin-bottom: 0;
+}
+
+.perfume-info strong {
+    color: #403c36;
+
+    font-weight: 600;
+}
+
+
+/* ================================
+   PRICE SECTION
+================================ */
+
+.price-section {
+    border-top: 1px solid #eeeae3;
+
+    padding-top: 18px;
+
+    margin-top: 2px;
 }
 
 .price-row {
@@ -349,11 +394,17 @@ border-top: 1px solid #eee;
 
     padding: 13px 5px;
 
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eeeeea;
 
-    font-size: 15px;
+    font-size: 14px;
+
+    color: #625d56;
 
     gap: 40px;
+}
+
+.price-row:last-child {
+    border-bottom: none;
 }
 
 .price-row span:first-child {
@@ -365,206 +416,332 @@ border-top: 1px solid #eee;
 
     color: #2d2a26;
 
-    min-width: 110px;
+    min-width: 100px;
 
     text-align: right;
-}```
 
+    white-space: nowrap;
 }
 
-.price {
-font-weight: 600;
 
-```
-color: #2d2a26;
-```
-
-}
-
-/* =========================
-AVAILABILITY
-========================= */
+/* ================================
+   AVAILABILITY
+================================ */
 
 .availability {
-margin-top: 20px;
+    text-align: center;
 
-```
-font-size: 14px;
+    margin-top: 18px;
 
-font-weight: 500;
-```
+    padding: 8px 12px;
 
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    font-weight: 500;
 }
 
-.available {
-color: #4d8b58;
+.in-stock {
+    background: #f1f6f0;
+
+    color: #567050;
 }
 
-.unavailable {
-color: #c44;
+.out-of-stock {
+    background: #f8eeee;
+
+    color: #9a5555;
 }
 
-/* =========================
-WHATSAPP
-========================= */
+
+/* ================================
+   WHATSAPP BUTTON
+================================ */
 
 .whatsapp-button {
-display: block;
+    display: block;
 
-```
-text-align: center;
+    width: 100%;
 
-margin-top: 22px;
+    margin-top: 15px;
 
-padding: 13px;
+    padding: 13px 20px;
 
-background: #2d2a26;
+    background: #2d2a26;
 
-color: white;
+    color: #ffffff;
 
-text-decoration: none;
+    text-align: center;
 
-border-radius: 4px;
+    text-decoration: none;
 
-transition: 0.3s;
-```
+    border: none;
 
+    font-family: "Poppins", sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
 .whatsapp-button:hover {
-background: #a47c48;
+    background: #a07c45;
 }
 
-/* =========================
-ABOUT
-========================= */
+
+/* DISABLED BUTTON */
+
+.disabled-button {
+    background: #d5d2cc;
+
+    color: #77736d;
+
+    cursor: not-allowed;
+}
+
+.disabled-button:hover {
+    background: #d5d2cc;
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
 
 .about {
-padding: 90px 8%;
+    padding: 110px 7%;
 
-```
-background: #ebe6dc;
+    background: #f2f0eb;
 
-text-align: center;
-```
-
+    text-align: center;
 }
 
 .about-content {
-max-width: 700px;
+    max-width: 750px;
 
-```
-margin: auto;
-```
-
+    margin: 0 auto;
 }
 
 .about h2 {
-font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 48px;
+    font-size: 50px;
 
-margin-bottom: 20px;
-```
+    line-height: 1.15;
 
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    color: #292621;
 }
 
-.about p {
-color: #666;
+.about p:not(.subtitle) {
+    color: #68635c;
 
-```
-margin-bottom: 12px;
-```
+    font-size: 15px;
 
+    margin-bottom: 18px;
 }
 
-/* =========================
-FOOTER
-========================= */
+
+/* ================================
+   FOOTER
+================================ */
 
 footer {
-text-align: center;
+    padding: 55px 20px;
 
-```
-padding: 45px 20px;
+    text-align: center;
 
-background: #2d2a26;
+    background: #ffffff;
 
-color: white;
-```
-
+    border-top: 1px solid #eae7e1;
 }
 
 footer h3 {
-font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
-```
-font-size: 28px;
+    font-size: 27px;
 
-letter-spacing: 2px;
-```
+    letter-spacing: 2px;
 
+    margin-bottom: 8px;
 }
 
 footer p {
-margin-top: 10px;
+    font-size: 13px;
 
-```
-font-size: 14px;
-
-color: #ddd;
-```
-
+    color: #77736c;
 }
 
-.copyright {
-margin-top: 25px;
+footer .copyright {
+    margin-top: 20px;
 
-```
-font-size: 12px;
-```
+    font-size: 11px;
 
+    color: #99948c;
 }
 
-/* =========================
-MOBILE
-========================= */
 
-@media (max-width: 700px) {
+/* ================================
+   TABLET
+================================ */
 
-```
-header {
-    padding: 18px 6%;
+@media (max-width: 1000px) {
+
+    .perfume-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
+    }
+
+    .shop {
+        padding: 80px 5%;
+    }
+
+    .perfume-image {
+        height: 300px;
+    }
 }
 
-.logo {
-    font-size: 24px;
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 650px) {
+
+    header {
+        padding: 18px 5%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .logo span {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: 70vh;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero p:not(.subtitle) {
+        font-size: 14px;
+    }
+
+
+    /* SHOP */
+
+    .shop {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 42px;
+    }
+
+
+    /* GRID */
+
+    .perfume-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    /* CARD */
+
+    .perfume-image {
+        height: 320px;
+    }
+
+    .perfume-content {
+        padding: 25px 22px;
+    }
+
+    .perfume-content h3 {
+        font-size: 30px;
+    }
+
+
+    /* ABOUT */
+
+    .about {
+        padding: 80px 25px;
+    }
+
+    .about h2 {
+        font-size: 42px;
+    }
+
+    .about p:not(.subtitle) {
+        font-size: 14px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 45px 20px;
+    }
 }
 
-nav {
-    display: none;
-}
 
-.hero {
-    min-height: 70vh;
-}
+/* ================================
+   SMALL MOBILE
+================================ */
 
-.hero h1 {
-    font-size: 48px;
-}
+@media (max-width: 400px) {
 
-.hero p {
-    font-size: 15px;
-}
+    .hero h1 {
+        font-size: 44px;
+    }
 
-.section-title h2 {
-    font-size: 40px;
-}
+    .perfume-image {
+        height: 280px;
+    }
 
-.about h2 {
-    font-size: 40px;
-}
-```
+    .price-row {
+        gap: 20px;
 
+        padding: 12px 2px;
+    }
+
+    .price {
+        min-width: 85px;
+    }
 }
