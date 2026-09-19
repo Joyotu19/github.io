@@ -2,26 +2,22 @@ const whatsappNumber = "8801675550131";
 
 const perfumes = [
 
-    // ================================
-    // 1. LIQUID BRUN
-    // ================================
-
     {
         name: "Liquid Brun",
         brand: "French Avenue",
         image: "images/liquid brun.png",
 
-        notes: {
-            top: "Cinnamon • Orange Blossom • Cardamom • Bergamot",
-            middle: "Bourbon Vanilla • Elemi",
-            base: "Praline • Ambroxan • Musk • Guaiac Wood"
-        },
+        notes:
+            "Cinnamon, Orange Blossom, Cardamom, Bergamot, Bourbon Vanilla, Elemi, Praline, Ambroxan, Musk and Guaiac Wood.",
 
-        smell: "Warm, sweet, spicy, and creamy. It opens with cinnamon and citrus, develops into a smooth vanilla heart, and settles into a rich woody and musky dry-down.",
+        smell:
+            "Warm, sweet, spicy and creamy with a smooth vanilla character. It has a rich and sophisticated presence.",
 
-        occasions: "Evening • Dates • Parties • Special Occasions",
+        occasions:
+            "Evening, dates, special occasions and formal events.",
 
-        season: "Autumn • Winter • Cool Weather",
+        season:
+            "Autumn and Winter",
 
         prices: {
             "5 ml": 320,
@@ -33,26 +29,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 2. MARWA
-    // ================================
-
     {
         name: "Marwa",
         brand: "Arabiyat Prestige",
         image: "images/marwa.jpg",
 
-        notes: {
-            top: "Bergamot • Petit Grain • Ginger",
-            middle: "Geranium • Tea • Incense",
-            base: "Guaiac Wood • Ambroxan • Musk"
-        },
+        notes:
+            "Bergamot, Petit Grain, Ginger, Geranium, Tea, Incense, Guaiac Wood, Ambroxan and Musk.",
 
-        smell: "Fresh, citrusy, aromatic, and slightly smoky. It opens with bright bergamot and ginger, develops into a smooth tea and incense heart, and settles into a clean woody and musky dry-down.",
+        smell:
+            "Fresh, clean and slightly spicy with a refined woody character. It feels elegant and versatile.",
 
-        occasions: "Office • Daily Wear • Travel • Special Occasions",
+        occasions:
+            "Daily wear, office, casual outings and daytime occasions.",
 
-        season: "Spring • Summer • All Seasons",
+        season:
+            "Spring, Summer and Autumn",
 
         prices: {
             "5 ml": 300,
@@ -64,26 +56,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 3. HAWAS KOBRA
-    // ================================
-
     {
         name: "Hawas Kobra",
         brand: "Rasasi",
         image: "images/kobra.png",
 
-        notes: {
-            top: "Ginger • Bergamot • Tangerine",
-            middle: "Green Tea • Cinnamon • Neroli",
-            base: "Musk • Woody Notes • Amber"
-        },
+        notes:
+            "Ginger, Bergamot, Tangerine, Green Tea, Cinnamon, Neroli, Musk, Woody Notes and Amber.",
 
-        smell: "Fresh, citrusy, spicy, and aromatic. The opening is bright and energetic, followed by refreshing green tea and neroli, with a warm woody, musky, and amber base.",
+        smell:
+            "Fresh citrus and spicy opening with a clean green character, followed by a warm woody and musky dry-down.",
 
-        occasions: "Daily Wear • Office • Casual Outings • Travel",
+        occasions:
+            "Daily wear, office, casual outings and evening activities.",
 
-        season: "Spring • Summer • All Seasons",
+        season:
+            "Spring, Summer and Autumn",
 
         prices: {
             "5 ml": 250,
@@ -95,26 +83,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 4. HAWAS FIRE
-    // ================================
-
     {
         name: "Hawas Fire",
         brand: "Rasasi",
         image: "images/fire.jpg",
 
-        notes: {
-            top: "Clary Sage",
-            middle: "Marine Notes • Egyptian Jasmine",
-            base: "Amber • Mineral Notes • Ambergris"
-        },
+        notes:
+            "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
 
-        smell: "Fresh, aquatic, mineral, and slightly salty. It combines a clean marine character with aromatic sage and jasmine before settling into a warm amber and mineral base.",
+        smell:
+            "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
 
-        occasions: "Outdoor Wear • Casual • Beach Days • Evening",
+        occasions:
+            "Casual outings, daytime wear, summer activities and relaxed evenings.",
 
-        season: "Spring • Summer • Warm Weather",
+        season:
+            "Spring and Summer",
 
         prices: {
             "5 ml": 320,
@@ -126,26 +110,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 5. OPULENT DUBAI
-    // ================================
-
     {
         name: "Opulent Dubai",
         brand: "Lattafa",
         image: "images/opulent dubai.png",
 
-        notes: {
-            top: "Mango • Grapefruit • Lemon • Ginger",
-            middle: "Jasmine • Cedarwood • Violet",
-            base: "Woody Notes • Ambergris • Oakmoss • Benzoin"
-        },
+        notes:
+            "Mango, Grapefruit, Lemon, Ginger, Jasmine, Cedarwood, Violet, Woody Notes, Ambergris, Oakmoss and Benzoin.",
 
-        smell: "Fruity, fresh, woody, and slightly sweet. The juicy mango and citrus opening develops into a floral and woody heart before drying down into a warm, earthy, and resinous base.",
+        smell:
+            "Fruity and citrusy at first, followed by floral and woody notes with a warm, slightly sweet finish.",
 
-        occasions: "Casual Wear • Parties • Evening • Special Occasions",
+        occasions:
+            "Parties, evening outings, special occasions and social events.",
 
-        season: "Spring • Summer • Autumn",
+        season:
+            "Spring, Autumn and Winter",
 
         prices: {
             "5 ml": 200,
@@ -157,26 +137,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 6. ODYSSEY LIMONI
-    // ================================
-
     {
         name: "Odyssey Limoni",
         brand: "Armaf",
         image: "images/limoni.png",
 
-        notes: {
-            top: "Lemon • Sweet Orange • Mandarin • Bergamot",
-            middle: "Orange Blossom • Marine Notes • Ginger",
-            base: "Tea • Musk • Amber"
-        },
+        notes:
+            "Lemon, Sweet Orange, Mandarin, Bergamot, Orange Blossom, Marine Notes, Ginger, Tea, Musk and Amber.",
 
-        smell: "Bright, fresh, citrusy, and aquatic. It starts with lively lemon, orange, mandarin, and bergamot, followed by a refreshing marine and floral heart with a clean tea, musk, and amber finish.",
+        smell:
+            "Bright, fresh and citrusy with a clean aquatic feel and a soft musky dry-down.",
 
-        occasions: "Daily Wear • Office • Casual Outings • Outdoor Activities",
+        occasions:
+            "Everyday wear, office, outdoor activities and daytime outings.",
 
-        season: "Spring • Summer • Hot Weather",
+        season:
+            "Spring and Summer",
 
         prices: {
             "5 ml": 270,
@@ -188,26 +164,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 7. AT DAWN
-    // ================================
-
     {
         name: "At Dawn",
         brand: "MINISO",
         image: "images/at dawn.jpg",
 
-        notes: {
-            top: "Citrus Fresh",
-            middle: "Lily of the Valley",
-            base: "Balsamic"
-        },
+        notes:
+            "Citrus Fresh, Lily of the Valley and Balsamic notes.",
 
-        smell: "Fresh and bright at the opening, with a clean citrus character that develops into a soft floral heart and finishes with a warm balsamic touch.",
+        smell:
+            "Fresh, light and clean with a gentle citrus opening and a soft floral character.",
 
-        occasions: "Daily Wear • Office • Casual Outings • Daytime",
+        occasions:
+            "Daily wear, school or university, casual outings and daytime activities.",
 
-        season: "Spring • Summer • Warm Weather",
+        season:
+            "Spring and Summer",
 
         prices: {
             "5 ml": 200,
@@ -218,26 +190,22 @@ const perfumes = [
     },
 
 
-    // ================================
-    // 8. MOUNTAIN NIGHT
-    // ================================
-
     {
         name: "Mountain Night",
         brand: "MINISO",
         image: "images/mountain night.jpg",
 
-        notes: {
-            top: "Mandarin • Lemon • Grapefruit • Mint",
-            middle: "Sage • Fir Balsam • Nutmeg • Geranium",
-            base: "Patchouly • Vetyver • Moss • Dry Amber"
-        },
+        notes:
+            "Mandarin, Lemon, Grapefruit, Mint, Sage, Fir Balsam, Nutmeg, Geranium, Patchouli, Vetiver, Moss and Dry Amber.",
 
-        smell: "Fresh, citrusy, green, and aromatic. The bright citrus and mint opening develops into an herbal and spicy heart, followed by a deeper earthy, woody, mossy, and amber dry-down.",
+        smell:
+            "Fresh citrus and mint with an aromatic green character that develops into a deeper woody and earthy scent.",
 
-        occasions: "Daily Wear • Office • Outdoor Wear • Evening",
+        occasions:
+            "Evening outings, casual wear, outdoor activities and cool-weather occasions.",
 
-        season: "Autumn • Spring • Summer • All Seasons",
+        season:
+            "Autumn and Winter",
 
         prices: {
             "5 ml": 200,
@@ -250,38 +218,28 @@ const perfumes = [
 ];
 
 
-// ================================
+// ==========================================
 // DISPLAY PRODUCTS
-// ================================
+// ==========================================
 
 const perfumeContainer = document.getElementById("perfume-container");
 
 
-perfumes.forEach(function (perfume) {
+perfumes.forEach((perfume) => {
 
-    const availabilityText = perfume.available
-        ? "In Stock"
-        : "Out of Stock";
+    const card = document.createElement("article");
 
-
-    const availabilityClass = perfume.available
-        ? "in-stock"
-        : "out-of-stock";
+    card.className = "perfume-card";
 
 
     // Create price rows
     const priceRows = Object.entries(perfume.prices)
-        .map(function ([size, price]) {
+        .map(([size, price]) => {
 
             return `
                 <div class="price-row">
-
                     <span>${size}</span>
-
-                    <span class="price">
-                        ৳${price}
-                    </span>
-
+                    <strong>৳${price.toLocaleString()}</strong>
                 </div>
             `;
 
@@ -290,44 +248,33 @@ perfumes.forEach(function (perfume) {
 
 
     // WhatsApp message
-    const whatsappMessage =
-        `Hello! I am interested in ${perfume.name} by ${perfume.brand}.`;
-
-
-    const whatsappLink =
-        `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-
-
-    // Create card
-    const card = document.createElement("div");
-
-    card.className = "perfume-card";
+    const whatsappMessage = encodeURIComponent(
+        `Hello! I am interested in ${perfume.name} by ${perfume.brand}.`
+    );
 
 
     card.innerHTML = `
 
         <!-- PRODUCT IMAGE -->
 
-        <div class="perfume-image">
+        <div class="product-image">
 
             <img
                 src="${perfume.image}"
-                alt="${perfume.name} by ${perfume.brand}"
+                alt="${perfume.name} perfume"
             >
 
         </div>
 
 
-        <!-- PRODUCT CONTENT -->
+        <!-- PRODUCT INFORMATION -->
 
-        <div class="perfume-content">
+        <div class="product-info">
 
 
-            <!-- PRODUCT NAME -->
+            <!-- NAME -->
 
-            <h3>
-                ${perfume.name}
-            </h3>
+            <h3>${perfume.name}</h3>
 
 
             <!-- BRAND -->
@@ -337,87 +284,18 @@ perfumes.forEach(function (perfume) {
             </p>
 
 
-            <!-- FRAGRANCE NOTES -->
+            <!-- SHORT SCENT DESCRIPTION -->
 
-            <div class="perfume-info">
-
-                <h4>
-                    Fragrance Notes
-                </h4>
-
-
-                <p>
-                    <strong>Top:</strong>
-                    ${perfume.notes.top}
-                </p>
-
-
-                <p>
-                    <strong>Middle:</strong>
-                    ${perfume.notes.middle}
-                </p>
-
-
-                <p>
-                    <strong>Base:</strong>
-                    ${perfume.notes.base}
-                </p>
-
-            </div>
-
-
-            <!-- HOW DOES IT SMELL -->
-
-            <div class="perfume-info">
-
-                <h4>
-                    How Does It Smell?
-                </h4>
-
-                <p>
-                    ${perfume.smell}
-                </p>
-
-            </div>
-
-
-            <!-- BEST FOR -->
-
-            <div class="perfume-info">
-
-                <h4>
-                    Best For
-                </h4>
-
-                <p>
-                    ${perfume.occasions}
-                </p>
-
-            </div>
-
-
-            <!-- BEST SEASON -->
-
-            <div class="perfume-info">
-
-                <h4>
-                    Best Season
-                </h4>
-
-                <p>
-                    ${perfume.season}
-                </p>
-
-            </div>
+            <p class="scent-summary">
+                ${perfume.smell}
+            </p>
 
 
             <!-- PRICES -->
 
             <div class="price-section">
 
-                <h4>
-                    Available Sizes
-                </h4>
+                <h4>Available Sizes</h4>
 
                 ${priceRows}
 
@@ -426,40 +304,101 @@ perfumes.forEach(function (perfume) {
 
             <!-- AVAILABILITY -->
 
-            <div class="availability ${availabilityClass}">
-                ${availabilityText}
+            <p class="
+                availability
+                ${perfume.available ? "in-stock" : "out-of-stock"}
+            ">
+
+                ${
+                    perfume.available
+                        ? "✓ Available"
+                        : "Currently Unavailable"
+                }
+
+            </p>
+
+
+            <!-- VIEW DETAILS BUTTON -->
+
+            <button
+                class="details-button"
+                type="button"
+            >
+                View Details
+            </button>
+
+
+            <!-- HIDDEN DETAILS -->
+
+            <div class="product-details">
+
+
+                <div class="detail-item">
+
+                    <h4>
+                        Fragrance Notes
+                    </h4>
+
+                    <p>
+                        ${perfume.notes}
+                    </p>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <h4>
+                        How Does It Smell?
+                    </h4>
+
+                    <p>
+                        ${perfume.smell}
+                    </p>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <h4>
+                        Best For
+                    </h4>
+
+                    <p>
+                        ${perfume.occasions}
+                    </p>
+
+                </div>
+
+
+                <div class="detail-item">
+
+                    <h4>
+                        Best Season
+                    </h4>
+
+                    <p>
+                        ${perfume.season}
+                    </p>
+
+                </div>
+
+
             </div>
 
 
-            <!-- WHATSAPP -->
+            <!-- WHATSAPP BUTTON -->
 
-            ${
-                perfume.available
+            <a
+                href="https://wa.me/${whatsappNumber}?text=${whatsappMessage}"
+                class="whatsapp-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Order on WhatsApp
+            </a>
 
-                    ? `
-
-                        <a
-                            href="${whatsappLink}"
-                            class="whatsapp-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Order on WhatsApp
-                        </a>
-
-                    `
-
-                    : `
-
-                        <button
-                            class="whatsapp-button disabled-button"
-                            disabled
-                        >
-                            Currently Unavailable
-                        </button>
-
-                    `
-            }
 
         </div>
 
@@ -467,5 +406,57 @@ perfumes.forEach(function (perfume) {
 
 
     perfumeContainer.appendChild(card);
+
+
+    // ======================================
+    // VIEW DETAILS FUNCTION
+    // ======================================
+
+    const detailsButton =
+        card.querySelector(".details-button");
+
+    const productDetails =
+        card.querySelector(".product-details");
+
+
+    detailsButton.addEventListener("click", () => {
+
+        productDetails.classList.toggle("show");
+
+
+        if (productDetails.classList.contains("show")) {
+
+            detailsButton.textContent =
+                "Hide Details";
+
+        } else {
+
+            detailsButton.textContent =
+                "View Details";
+
+        }
+
+    });
+
+});
+
+
+// ==========================================
+// HEADER SCROLL EFFECT
+// ==========================================
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 50) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
 
 });

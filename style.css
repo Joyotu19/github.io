@@ -1,6 +1,23 @@
-/* ================================
-   RESET
-================================ */
+/* ==========================================
+   MOHAN PERFUME
+   Main Stylesheet
+   ========================================== */
+
+
+/* ==========================================
+   GOOGLE FONTS
+   ========================================== */
+
+/*
+   Fonts are loaded in index.html:
+   Poppins
+   Cormorant Garamond
+*/
+
+
+/* ==========================================
+   GENERAL
+   ========================================== */
 
 * {
     margin: 0;
@@ -9,242 +26,285 @@
 }
 
 
-/* ================================
-   BODY
-================================ */
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
-    font-family: "Poppins", sans-serif;
+    background: #fbf9f5;
 
-    background: #faf9f6;
+    color: #333;
 
-    color: #2d2a26;
+    font-family: 'Poppins', sans-serif;
 
     line-height: 1.6;
 }
 
 
-/* ================================
+/* ==========================================
    HEADER
-================================ */
+   ========================================== */
 
 header {
+
     width: 100%;
 
     padding: 22px 7%;
 
     display: flex;
 
-    justify-content: space-between;
-
     align-items: center;
 
-    background: #ffffff;
+    justify-content: space-between;
 
-    border-bottom: 1px solid #eeeeea;
+    background: rgba(251, 249, 245, 0.96);
+
+    border-bottom: 1px solid #eee8df;
 
     position: sticky;
 
     top: 0;
 
     z-index: 1000;
+
+    transition: all 0.3s ease;
 }
 
 
-/* ================================
+header.scrolled {
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+
+}
+
+
+/* ==========================================
    LOGO
-================================ */
+   ========================================== */
 
 .logo {
-    font-family: "Cormorant Garamond", serif;
 
-    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 28px;
 
     font-weight: 700;
 
     letter-spacing: 2px;
 
-    color: #2d2a26;
+    color: #2f2a24;
 }
+
 
 .logo span {
-    font-weight: 500;
 
-    font-size: 18px;
+    font-size: 15px;
+
+    font-family: 'Poppins', sans-serif;
 
     letter-spacing: 3px;
+
+    font-weight: 400;
+
+    color: #a07c45;
+
+    margin-left: 5px;
 }
 
 
-/* ================================
+/* ==========================================
    NAVIGATION
-================================ */
+   ========================================== */
 
 nav {
+
     display: flex;
 
-    gap: 35px;
+    gap: 32px;
 }
 
+
 nav a {
+
     text-decoration: none;
 
-    color: #55514b;
+    color: #4d463d;
 
     font-size: 14px;
 
-    font-weight: 500;
+    letter-spacing: 0.5px;
 
-    transition: 0.3s ease;
+    transition: color 0.3s ease;
 }
 
+
 nav a:hover {
+
     color: #a07c45;
 }
 
 
-/* ================================
+/* ==========================================
    HERO
-================================ */
+   ========================================== */
 
 .hero {
-    min-height: 75vh;
+
+    min-height: 520px;
 
     display: flex;
 
-    justify-content: center;
-
     align-items: center;
+
+    justify-content: center;
 
     text-align: center;
 
     padding: 80px 20px;
 
     background:
+
         linear-gradient(
-            rgba(250, 249, 246, 0.88),
-            rgba(250, 249, 246, 0.95)
+            rgba(251, 249, 245, 0.72),
+            rgba(251, 249, 245, 0.72)
         );
 }
 
+
 .hero-content {
-    max-width: 750px;
+
+    max-width: 760px;
 }
 
 
-/* HERO SUBTITLE */
-
 .subtitle {
-    font-size: 13px;
 
-    letter-spacing: 4px;
+    font-size: 12px;
 
-    font-weight: 500;
+    letter-spacing: 3px;
 
     color: #a07c45;
+
+    font-weight: 500;
 
     margin-bottom: 15px;
 }
 
 
-/* HERO TITLE */
-
 .hero h1 {
-    font-family: "Cormorant Garamond", serif;
 
-    font-size: clamp(50px, 7vw, 85px);
+    font-family: 'Cormorant Garamond', serif;
 
-    line-height: 1.05;
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1;
 
     font-weight: 600;
 
-    margin-bottom: 25px;
+    color: #2f2a24;
 
-    color: #292621;
+    margin-bottom: 25px;
 }
 
-
-/* HERO DESCRIPTION */
 
 .hero p:not(.subtitle) {
-    max-width: 570px;
 
-    margin: 0 auto 35px;
+    max-width: 600px;
 
-    color: #6f6a62;
+    margin: 0 auto 32px;
+
+    color: #6c655d;
 
     font-size: 15px;
+
+    line-height: 1.9;
 }
 
 
-/* SHOP BUTTON */
+/* ==========================================
+   SHOP BUTTON
+   ========================================== */
 
 .shop-button {
+
     display: inline-block;
 
-    padding: 14px 30px;
+    padding: 13px 28px;
 
-    background: #2d2a26;
+    background: #3d352c;
 
-    color: #ffffff;
+    color: white;
 
     text-decoration: none;
 
     font-size: 13px;
 
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
 }
+
 
 .shop-button:hover {
+
     background: #a07c45;
+
+    transform: translateY(-2px);
 }
 
 
-/* ================================
+/* ==========================================
    SHOP SECTION
-================================ */
+   ========================================== */
 
 .shop {
-    padding: 100px 7%;
+
+    padding: 90px 7%;
 }
 
 
-/* ================================
+/* ==========================================
    SECTION TITLE
-================================ */
+   ========================================== */
 
 .section-title {
+
     text-align: center;
 
-    margin-bottom: 60px;
+    margin-bottom: 55px;
 }
 
-.section-title p {
-    font-size: 12px;
 
-    letter-spacing: 4px;
+.section-title p {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
 
     color: #a07c45;
 
     margin-bottom: 8px;
 }
 
-.section-title h2 {
-    font-family: "Cormorant Garamond", serif;
 
-    font-size: 50px;
+.section-title h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 48px;
 
     font-weight: 600;
 
-    color: #292621;
+    color: #2f2a24;
 }
 
+
 .section-title span {
+
     display: block;
 
-    width: 55px;
+    width: 45px;
 
     height: 1px;
 
@@ -254,16 +314,18 @@ nav a:hover {
 }
 
 
-/* ================================
-   PERFUME GRID
-================================ */
+/* ==========================================
+   PRODUCT GRID
+   ========================================== */
 
 .perfume-grid {
+
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
 
-    gap: 35px;
+    gap: 28px;
 
     max-width: 1400px;
 
@@ -271,14 +333,15 @@ nav a:hover {
 }
 
 
-/* ================================
-   PERFUME CARD
-================================ */
+/* ==========================================
+   PRODUCT CARD
+   ========================================== */
 
 .perfume-card {
+
     background: #ffffff;
 
-    border: 1px solid #ece9e3;
+    border: 1px solid #eee7dd;
 
     transition:
         transform 0.3s ease,
@@ -287,107 +350,148 @@ nav a:hover {
     overflow: hidden;
 }
 
+
 .perfume-card:hover {
+
     transform: translateY(-5px);
 
     box-shadow:
-        0 15px 35px rgba(40, 35, 28, 0.08);
+        0 15px 35px rgba(50, 40, 30, 0.08);
 }
 
 
-/* ================================
-   PERFUME IMAGE
-================================ */
+/* ==========================================
+   PRODUCT IMAGE
+   ========================================== */
 
-.perfume-image {
+.product-image {
+
     width: 100%;
 
     height: 320px;
 
-    display: flex;
+    background: #f6f3ee;
 
-    justify-content: center;
+    display: flex;
 
     align-items: center;
 
-    background: #f7f6f2;
+    justify-content: center;
 
-    padding: 25px;
+    overflow: hidden;
 }
 
-.perfume-image img {
+
+.product-image img {
+
     width: 100%;
 
     height: 100%;
 
     object-fit: contain;
 
-    display: block;
+    transition: transform 0.5s ease;
 }
 
 
-/* ================================
-   PERFUME CONTENT
-================================ */
+.perfume-card:hover
+.product-image img {
 
-.perfume-content {
-    padding: 28px;
+    transform: scale(1.03);
 }
 
 
-/* ================================
-   PERFUME NAME
-================================ */
+/* ==========================================
+   PRODUCT INFO
+   ========================================== */
 
-.perfume-content h3 {
-    font-family: "Cormorant Garamond", serif;
+.product-info {
 
-    font-size: 32px;
+    padding: 30px 28px;
+}
+
+
+/* ==========================================
+   PRODUCT NAME
+   ========================================== */
+
+.product-info h3 {
+
+    text-align: center;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 30px;
 
     font-weight: 600;
 
-    text-align: center;
+    color: #2f2a24;
 
-    color: #292621;
-
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 
-/* ================================
-   BRAND NAME
-================================ */
+/* ==========================================
+   BRAND
+   ========================================== */
 
 .brand-name {
+
     text-align: center;
 
-    font-size: 12px;
+    font-size: 11px;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.8px;
 
     text-transform: uppercase;
 
     color: #a07c45;
 
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 
     font-weight: 500;
 }
 
 
-/* ================================
-   INFORMATION SECTIONS
-================================ */
+/* ==========================================
+   SHORT SCENT DESCRIPTION
+   ========================================== */
 
-.perfume-info {
-    border-top: 1px solid #eeeae3;
+.scent-summary {
 
-    padding: 18px 0;
+    text-align: center;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    color: #66605a;
+
+    margin: 0 auto 24px;
+
+    max-width: 310px;
 }
 
-.perfume-info h4,
+
+/* ==========================================
+   PRICE SECTION
+   ========================================== */
+
+.price-section {
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #eee8df;
+}
+
+
 .price-section h4 {
-    font-size: 12px;
+
+    text-align: center;
+
+    font-size: 11px;
 
     text-transform: uppercase;
 
@@ -395,403 +499,732 @@ nav a:hover {
 
     color: #a07c45;
 
-    margin-bottom: 9px;
-
-    font-weight: 600;
-}
-
-.perfume-info p {
-    font-size: 13px;
-
-    color: #68635c;
-
-    line-height: 1.7;
-
-    margin-bottom: 5px;
-}
-
-.perfume-info p:last-child {
-    margin-bottom: 0;
-}
-
-.perfume-info strong {
-    color: #403c36;
-
-    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 
-/* ================================
-   PRICE SECTION
-================================ */
-
-.price-section {
-    border-top: 1px solid #eeeae3;
-
-    padding-top: 18px;
-
-    margin-top: 2px;
-}
+/* ==========================================
+   PRICE ROW
+   ========================================== */
 
 .price-row {
-    display: flex;
 
-    justify-content: space-between;
+    display: flex;
 
     align-items: center;
 
-    padding: 13px 5px;
+    justify-content: space-between;
 
-    border-bottom: 1px solid #eeeeea;
+    padding: 8px 0;
 
-    font-size: 14px;
-
-    color: #625d56;
-
-    gap: 40px;
-}
-
-.price-row:last-child {
-    border-bottom: none;
-}
-
-.price-row span:first-child {
-    min-width: 60px;
-}
-
-.price {
-    font-weight: 600;
-
-    color: #2d2a26;
-
-    min-width: 100px;
-
-    text-align: right;
-
-    white-space: nowrap;
-}
-
-
-/* ================================
-   AVAILABILITY
-================================ */
-
-.availability {
-    text-align: center;
-
-    margin-top: 18px;
-
-    padding: 8px 12px;
-
-    font-size: 12px;
-
-    letter-spacing: 1px;
-
-    font-weight: 500;
-}
-
-.in-stock {
-    background: #f1f6f0;
-
-    color: #567050;
-}
-
-.out-of-stock {
-    background: #f8eeee;
-
-    color: #9a5555;
-}
-
-
-/* ================================
-   WHATSAPP BUTTON
-================================ */
-
-.whatsapp-button {
-    display: block;
-
-    width: 100%;
-
-    margin-top: 15px;
-
-    padding: 13px 20px;
-
-    background: #2d2a26;
-
-    color: #ffffff;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    border: none;
-
-    font-family: "Poppins", sans-serif;
+    border-bottom: 1px solid #f1ede7;
 
     font-size: 13px;
 
-    letter-spacing: 0.5px;
+    color: #5e5851;
+}
+
+
+.price-row:last-child {
+
+    border-bottom: none;
+}
+
+
+.price-row strong {
+
+    color: #302a24;
+
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   AVAILABILITY
+   ========================================== */
+
+.availability {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    margin: 15px 0 18px;
+
+    letter-spacing: 0.4px;
+}
+
+
+.in-stock {
+
+    color: #56745c;
+}
+
+
+.out-of-stock {
+
+    color: #a04b45;
+}
+
+
+/* ==========================================
+   VIEW DETAILS BUTTON
+   ========================================== */
+
+.details-button {
+
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin-top: 4px;
+
+    background: transparent;
+
+    border: 1px solid #d8c7ad;
+
+    color: #7d6240;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    letter-spacing: 0.6px;
 
     cursor: pointer;
 
-    transition: 0.3s ease;
-}
-
-.whatsapp-button:hover {
-    background: #a07c45;
-}
-
-
-/* ================================
-   DISABLED BUTTON
-================================ */
-
-.disabled-button {
-    background: #d5d2cc;
-
-    color: #77736d;
-
-    cursor: not-allowed;
-}
-
-.disabled-button:hover {
-    background: #d5d2cc;
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 
-/* ================================
-   ABOUT SECTION
-================================ */
+.details-button:hover {
 
-.about {
-    padding: 110px 7%;
+    background: #f5efe6;
 
-    background: #f2f0eb;
+    border-color: #c9b18d;
 
-    text-align: center;
+    color: #5f4930;
 }
 
-.about-content {
-    max-width: 750px;
 
-    margin: 0 auto;
+/* ==========================================
+   PRODUCT DETAILS
+   Hidden by default
+   ========================================== */
+
+.product-details {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 20px 0 5px;
+
+    border-top: 1px solid #eee8df;
+
+    animation: detailsFade 0.3s ease;
 }
 
-.about h2 {
-    font-family: "Cormorant Garamond", serif;
 
-    font-size: 50px;
+.product-details.show {
 
-    line-height: 1.15;
-
-    font-weight: 600;
-
-    margin-bottom: 25px;
-
-    color: #292621;
+    display: block;
 }
 
-.about p:not(.subtitle) {
-    color: #68635c;
 
-    font-size: 15px;
+/* ==========================================
+   DETAILS ANIMATION
+   ========================================== */
+
+@keyframes detailsFade {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-5px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   INDIVIDUAL DETAIL
+   ========================================== */
+
+.detail-item {
 
     margin-bottom: 18px;
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+.detail-item:last-child {
 
-footer {
-    padding: 55px 20px;
+    margin-bottom: 0;
+}
+
+
+.detail-item h4 {
+
+    font-size: 11px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.2px;
+
+    color: #a07c45;
+
+    margin-bottom: 6px;
+}
+
+
+.detail-item p {
+
+    font-size: 12.5px;
+
+    line-height: 1.75;
+
+    color: #68615a;
+
+    margin: 0;
+}
+
+
+/* ==========================================
+   WHATSAPP BUTTON
+   ========================================== */
+
+.whatsapp-button {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 12px 15px;
 
     text-align: center;
 
-    background: #ffffff;
+    text-decoration: none;
 
-    border-top: 1px solid #eae7e1;
+    background: #3d352c;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    letter-spacing: 0.5px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
 }
 
-footer h3 {
-    font-family: "Cormorant Garamond", serif;
 
-    font-size: 27px;
+.whatsapp-button:hover {
+
+    background: #a07c45;
+
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   ABOUT SECTION
+   ========================================== */
+
+/* ==========================================
+   HOW TO ORDER
+   ========================================== */
+
+.how-to-order {
+
+    padding: 100px 7%;
+
+    background: #ffffff;
+
+}
+
+
+/* ==========================================
+   ORDER STEPS
+   ========================================== */
+
+.order-steps {
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 40px;
+
+}
+
+
+/* ==========================================
+   INDIVIDUAL STEP
+   ========================================== */
+
+.order-step {
+
+    text-align: center;
+
+    padding: 35px 25px;
+
+    position: relative;
+
+}
+
+
+/* ==========================================
+   STEP NUMBER
+   ========================================== */
+
+.step-number {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 38px;
+
+    color: #a07c45;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ==========================================
+   STEP TITLE
+   ========================================== */
+
+.order-step h3 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #2f2a24;
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ==========================================
+   STEP DESCRIPTION
+   ========================================== */
+
+.order-step p {
+
+    max-width: 280px;
+
+    margin: 0 auto;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #6b645d;
+
+}
+
+
+/* ==========================================
+   ORDER NOTE
+   ========================================== */
+
+.order-note {
+
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #eee8df;
+
+    text-align: center;
+
+}
+
+
+.order-note p {
+
+    font-size: 12px;
+
+    line-height: 1.8;
+
+    color: #7a7269;
+
+}
+
+
+/* ==========================================
+   HOW TO ORDER - MOBILE
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .how-to-order {
+
+        padding: 75px 7%;
+
+    }
+
+
+    .order-steps {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    .order-step {
+
+        padding: 25px 15px;
+
+    }
+
+
+    .step-number {
+
+        font-size: 34px;
+
+    }
+
+
+    .order-step h3 {
+
+        font-size: 26px;
+
+    }
+
+}
+
+.about {
+
+    padding: 100px 7%;
+
+    background: #f3eee6;
+
+    text-align: center;
+}
+
+
+.about-content {
+
+    max-width: 720px;
+
+    margin: 0 auto;
+}
+
+
+.about h2 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 48px;
+
+    line-height: 1.1;
+
+    font-weight: 600;
+
+    color: #2f2a24;
+
+    margin-bottom: 25px;
+}
+
+
+.about p:not(.subtitle) {
+
+    color: #69625b;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+
+    padding: 55px 20px;
+
+    background: #2f2a24;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+
+footer h3 {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 28px;
 
     letter-spacing: 2px;
 
     margin-bottom: 8px;
 }
 
-footer p {
-    font-size: 13px;
 
-    color: #77736c;
+footer p {
+
+    font-size: 12px;
+
+    color: #c9c1b7;
+
+    margin-bottom: 10px;
 }
 
+
 footer .copyright {
-    margin-top: 20px;
+
+    margin-top: 25px;
 
     font-size: 11px;
 
-    color: #99948c;
+    color: #968e84;
 }
 
 
-/* ================================
+/* ==========================================
    TABLET
-================================ */
+   ========================================== */
 
 @media (max-width: 1000px) {
 
     .perfume-grid {
-        grid-template-columns: repeat(2, 1fr);
 
-        gap: 25px;
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
     }
 
     .shop {
-        padding: 80px 5%;
+
+        padding-left: 5%;
+
+        padding-right: 5%;
     }
 
-    .perfume-image {
-        height: 300px;
-    }
 }
 
 
-/* ================================
+/* ==========================================
    MOBILE
-================================ */
+   ========================================== */
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+
+    /* HEADER */
 
     header {
+
         padding: 18px 5%;
 
         flex-direction: column;
 
         gap: 12px;
+
     }
+
 
     .logo {
-        font-size: 26px;
+
+        font-size: 25px;
+
     }
+
 
     .logo span {
-        font-size: 16px;
+
+        font-size: 13px;
+
     }
+
 
     nav {
+
         gap: 22px;
+
     }
 
+
     nav a {
-        font-size: 13px;
+
+        font-size: 12px;
+
     }
 
 
     /* HERO */
 
     .hero {
-        min-height: 70vh;
 
-        padding: 60px 20px;
+        min-height: 460px;
+
+        padding:
+            70px 20px;
+
     }
+
 
     .hero h1 {
+
         font-size: 52px;
+
     }
 
+
     .hero p:not(.subtitle) {
-        font-size: 14px;
+
+        font-size: 13px;
+
     }
 
 
     /* SHOP */
 
     .shop {
-        padding: 70px 20px;
+
+        padding:
+            70px 5%;
+
     }
 
-    .section-title {
-        margin-bottom: 40px;
-    }
 
     .section-title h2 {
+
         font-size: 42px;
+
     }
 
 
-    /* GRID */
+    /* PRODUCT GRID */
 
     .perfume-grid {
+
         grid-template-columns: 1fr;
 
         gap: 25px;
+
     }
 
 
-    /* CARD */
+    /* PRODUCT IMAGE */
 
-    .perfume-image {
-        height: 320px;
+    .product-image {
+
+        height: 330px;
+
     }
 
-    .perfume-content {
-        padding: 25px 22px;
+
+    /* PRODUCT INFO */
+
+    .product-info {
+
+        padding:
+            28px 23px;
+
     }
 
-    .perfume-content h3 {
-        font-size: 30px;
+
+    .product-info h3 {
+
+        font-size: 29px;
+
     }
 
 
     /* ABOUT */
 
     .about {
-        padding: 80px 25px;
+
+        padding:
+            75px 7%;
+
     }
+
 
     .about h2 {
-        font-size: 42px;
+
+        font-size: 40px;
+
     }
 
-    .about p:not(.subtitle) {
-        font-size: 14px;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        padding: 45px 20px;
-    }
 }
 
 
-/* ================================
+/* ==========================================
    SMALL MOBILE
-================================ */
+   ========================================== */
 
 @media (max-width: 400px) {
 
     .hero h1 {
+
         font-size: 44px;
+
     }
 
-    .perfume-image {
-        height: 280px;
+
+    .logo {
+
+        font-size: 23px;
+
     }
 
-    .price-row {
-        gap: 20px;
 
-        padding: 12px 2px;
+    nav {
+
+        gap: 16px;
+
     }
 
-    .price {
-        min-width: 85px;
+
+    .product-image {
+
+        height: 290px;
+
     }
+
+
+    .product-info {
+
+        padding:
+            25px 20px;
+
+    }
+
 }
