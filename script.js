@@ -167,7 +167,7 @@ const perfumes = [
     {
         name: "At Dawn",
         brand: "MINISO",
-        image: "images/at dawn.jpg",
+        image: "images/at%20dawn.jpg",
 
         notes:
             "Citrus Fresh, Lily of the Valley and Balsamic notes.",
@@ -193,7 +193,7 @@ const perfumes = [
     {
         name: "Mountain Night",
         brand: "MINISO",
-        image: "images/mountain night.jpg",
+        image: "images/mountain%20night.jpg",
 
         notes:
             "Mandarin, Lemon, Grapefruit, Mint, Sage, Fir Balsam, Nutmeg, Geranium, Patchouli, Vetiver, Moss and Dry Amber.",
