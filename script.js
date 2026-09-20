@@ -83,7 +83,7 @@ const perfumes = [
     },
 
 
-    {
+{
     name: "Hawas Fire",
     brand: "Rasasi",
     image: "images/fire.jpg",
