@@ -84,30 +84,34 @@ const perfumes = [
 
 
     {
-        name: "Hawas Fire",
-        brand: "Rasasi",
-        image: "images/fire.jpg",
+    name: "Hawas Fire",
+    brand: "Rasasi",
+    image: "images/fire.jpg",
 
-        notes:
-            "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
+    notes:
+        "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
 
-        smell:
-            "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
+    smell:
+        "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
 
-        occasions:
-            "Casual outings, daytime wear, summer activities and relaxed evenings.",
+    occasions:
+        "Casual outings, daytime wear, summer activities and relaxed evenings.",
 
-        season:
-            "Spring and Summer",
+    season:
+        "Spring and Summer",
 
-        prices: {
-            "5 ml": 320,
-            "10 ml": 620,
-            "30 ml": 1800
-        },
-
-        available: true
+    prices: {
+        "5 ml": 320,
+        "10 ml": 620,
+        "30 ml": 1800
     },
+
+    unavailableSizes: [
+        "30 ml"
+    ],
+
+    available: true
+},
 
 
     {
