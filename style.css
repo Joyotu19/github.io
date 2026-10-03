@@ -230,7 +230,38 @@ nav a:hover {
    HERO
    ========================================== */
 
-.hero {
+.hero { /* ==========================================
+   HERO TITLE
+   ========================================== */
+
+.hero-title {
+    text-align: center;
+}
+
+.hero-title h1 {
+    margin-bottom: 12px;
+}
+
+.authenticity-badge {
+    display: inline-block;
+
+    margin: 0 auto;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    color: #8a6a3f;
+}
+
+.authenticity-badge::before {
+    content: "✓";
+    margin-right: 7px;
+
+    font-weight: 600;
+}
 
     min-height: 520px;
 
