@@ -83,35 +83,35 @@ const perfumes = [
     },
 
 
-{
-    name: "Hawas Fire",
-    brand: "Rasasi",
-    image: "images/fire.jpg",
+    {
+        name: "Hawas Fire",
+        brand: "Rasasi",
+        image: "images/fire.jpg",
 
-    notes:
-        "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
+        notes:
+            "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
 
-    smell:
-        "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
+        smell:
+            "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
 
-    occasions:
-        "Casual outings, daytime wear, summer activities and relaxed evenings.",
+        occasions:
+            "Casual outings, daytime wear, summer activities and relaxed evenings.",
 
-    season:
-        "Spring and Summer",
+        season:
+            "Spring and Summer",
 
-    prices: {
-        "5 ml": 330,
-        "10 ml": 610,
-        "30 ml": 1800
+        prices: {
+            "5 ml": 330,
+            "10 ml": 610,
+            "30 ml": 1800
+        },
+
+        unavailableSizes: [
+            "30 ml"
+        ],
+
+        available: false
     },
-
-    unavailableSizes: [
-        "30 ml"
-    ],
-
-    available: false
-},
 
 
     {
@@ -217,6 +217,60 @@ const perfumes = [
         },
 
         available: true
+    },
+
+
+    {
+        name: "Hawas Thunder",
+        brand: "Rasasi",
+        image: "images/thunder.jpg",
+
+        notes:
+            "Apple, Bergamot, Ginger, Cedarwood, Mandarin, Mate, Peony, Orange Blossom, Patchouli, Ambergris, Tonka Bean, Vanilla and Musk.",
+
+        smell:
+            "Fresh, crisp and energetic at first, with citrus, apple and ginger, then becoming warmer and woodier with a smooth vanilla, tonka and ambergris finish.",
+
+        occasions:
+            "Daily wear, office, casual outings, daytime activities and evening occasions.",
+
+        season:
+            "Spring, Summer and Autumn",
+
+        prices: {
+            "5 ml": 325,
+            "10 ml": 610,
+            "30 ml": 1600
+        },
+
+        available: true
+    },
+
+
+    {
+        name: "Asad",
+        brand: "Lattafa",
+        image: "images/asad.jpg",
+
+        notes:
+            "Black Pepper, Pineapple, Tobacco, Patchouli, Coffee, Iris, Vanilla, Amber, Dry Wood, Benzoin and Labdanum.",
+
+        smell:
+            "Warm, spicy and rich, opening with black pepper, pineapple and tobacco before developing into a deep coffee, patchouli and iris heart with a smooth vanilla, amber and woody finish.",
+
+        occasions:
+            "Evening wear, dates, parties, special occasions and formal events.",
+
+        season:
+            "Autumn and Winter",
+
+        prices: {
+            "5 ml": 250,
+            "10 ml": 480,
+            "30 ml": 1300
+        },
+
+        available: true
     }
 
 ];
@@ -237,13 +291,23 @@ perfumes.forEach((perfume) => {
 
 
     // Create price rows
+
     const priceRows = Object.entries(perfume.prices)
         .map(([size, price]) => {
+
+            const isUnavailable =
+                perfume.unavailableSizes &&
+                perfume.unavailableSizes.includes(size);
 
             return `
                 <div class="price-row">
                     <span>${size}</span>
-                    <strong>৳${price.toLocaleString()}</strong>
+
+                    ${
+                        isUnavailable
+                            ? `<strong class="out-of-stock-size">Out of Stock</strong>`
+                            : `<strong>৳${price.toLocaleString()}</strong>`
+                    }
                 </div>
             `;
 
@@ -252,6 +316,7 @@ perfumes.forEach((perfume) => {
 
 
     // WhatsApp message
+
     const whatsappMessage = encodeURIComponent(
         `Hello! I am interested in ${perfume.name} by ${perfume.brand}.`
     );
