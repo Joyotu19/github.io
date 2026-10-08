@@ -3,6 +3,32 @@ const whatsappNumber = "8801675550131";
 const perfumes = [
 
     {
+        name: "Hawas Thunder",
+        brand: "Rasasi",
+        image: "images/thunder.jpg",
+
+        notes:
+            "Apple, Bergamot, Ginger, Cedarwood, Mandarin, Mate, Peony, Orange Blossom, Patchouli, Ambergris, Tonka Bean, Vanilla and Musk.",
+
+        smell:
+            "Fresh, crisp and energetic at first, with citrus, apple and ginger, then becoming warmer and woodier with a smooth vanilla, tonka and ambergris finish.",
+
+        occasions:
+            "Daily wear, office, casual outings, daytime activities and evening occasions.",
+
+        season:
+            "Spring, Summer and Autumn",
+
+        prices: {
+            "5 ml": 325,
+            "10 ml": 610,
+            "30 ml": 1600
+        },
+
+        available: true
+    },
+
+    {
         name: "Liquid Brun",
         brand: "French Avenue",
         image: "images/liquid brun.png",
@@ -82,35 +108,55 @@ const perfumes = [
         available: true
     },
 
-
     {
-        name: "Hawas Fire",
-        brand: "Rasasi",
-        image: "images/fire.jpg",
+        name: "Asad",
+        brand: "Lattafa",
+        image: "images/asad.jpg",
 
         notes:
-            "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
+            "Black Pepper, Pineapple, Tobacco, Patchouli, Coffee, Iris, Vanilla, Amber, Dry Wood, Benzoin and Labdanum.",
 
         smell:
-            "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
+            "Warm, spicy and rich, opening with black pepper, pineapple and tobacco before developing into a deep coffee, patchouli and iris heart with a smooth vanilla, amber and woody finish.",
 
         occasions:
-            "Casual outings, daytime wear, summer activities and relaxed evenings.",
+            "Evening wear, dates, parties, special occasions and formal events.",
+
+        season:
+            "Autumn and Winter",
+
+        prices: {
+            "5 ml": 250,
+            "10 ml": 480,
+            "30 ml": 1300
+        },
+
+        available: true
+    }
+    {
+        name: "Odyssey Limoni",
+        brand: "Armaf",
+        image: "images/limoni.png",
+
+        notes:
+            "Lemon, Sweet Orange, Mandarin, Bergamot, Orange Blossom, Marine Notes, Ginger, Tea, Musk and Amber.",
+
+        smell:
+            "Bright, fresh and citrusy with a clean aquatic feel and a soft musky dry-down.",
+
+        occasions:
+            "Everyday wear, office, outdoor activities and daytime outings.",
 
         season:
             "Spring and Summer",
 
         prices: {
-            "5 ml": 330,
-            "10 ml": 610,
-            "30 ml": 1800
+            "5 ml": 280,
+            "10 ml": 530,
+            "30 ml": 1500
         },
 
-        unavailableSizes: [
-            "30 ml"
-        ],
-
-        available: false
+        available: true
     },
 
 
@@ -140,32 +186,6 @@ const perfumes = [
         available: true
     },
 
-
-    {
-        name: "Odyssey Limoni",
-        brand: "Armaf",
-        image: "images/limoni.png",
-
-        notes:
-            "Lemon, Sweet Orange, Mandarin, Bergamot, Orange Blossom, Marine Notes, Ginger, Tea, Musk and Amber.",
-
-        smell:
-            "Bright, fresh and citrusy with a clean aquatic feel and a soft musky dry-down.",
-
-        occasions:
-            "Everyday wear, office, outdoor activities and daytime outings.",
-
-        season:
-            "Spring and Summer",
-
-        prices: {
-            "5 ml": 280,
-            "10 ml": 530,
-            "30 ml": 1500
-        },
-
-        available: true
-    },
 
 
     {
@@ -220,58 +240,35 @@ const perfumes = [
     },
 
 
-    {
-        name: "Hawas Thunder",
+ {
+        name: "Hawas Fire",
         brand: "Rasasi",
-        image: "images/thunder.jpg",
+        image: "images/fire.jpg",
 
         notes:
-            "Apple, Bergamot, Ginger, Cedarwood, Mandarin, Mate, Peony, Orange Blossom, Patchouli, Ambergris, Tonka Bean, Vanilla and Musk.",
+            "Clary Sage, Marine Notes, Egyptian Jasmine, Amber, Mineral Notes and Ambergris.",
 
         smell:
-            "Fresh, crisp and energetic at first, with citrus, apple and ginger, then becoming warmer and woodier with a smooth vanilla, tonka and ambergris finish.",
+            "A fresh aquatic fragrance with a mineral character, balanced by aromatic and warm amber tones.",
 
         occasions:
-            "Daily wear, office, casual outings, daytime activities and evening occasions.",
+            "Casual outings, daytime wear, summer activities and relaxed evenings.",
 
         season:
-            "Spring, Summer and Autumn",
+            "Spring and Summer",
 
         prices: {
-            "5 ml": 325,
+            "5 ml": 330,
             "10 ml": 610,
-            "30 ml": 1600
+            "30 ml": 1800
         },
 
-        available: true
+        unavailableSizes: [
+            "30 ml"
+        ],
+
+        available: false
     },
-
-
-    {
-        name: "Asad",
-        brand: "Lattafa",
-        image: "images/asad.jpg",
-
-        notes:
-            "Black Pepper, Pineapple, Tobacco, Patchouli, Coffee, Iris, Vanilla, Amber, Dry Wood, Benzoin and Labdanum.",
-
-        smell:
-            "Warm, spicy and rich, opening with black pepper, pineapple and tobacco before developing into a deep coffee, patchouli and iris heart with a smooth vanilla, amber and woody finish.",
-
-        occasions:
-            "Evening wear, dates, parties, special occasions and formal events.",
-
-        season:
-            "Autumn and Winter",
-
-        prices: {
-            "5 ml": 250,
-            "10 ml": 480,
-            "30 ml": 1300
-        },
-
-        available: true
-    }
 
 ];
 
