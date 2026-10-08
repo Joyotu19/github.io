@@ -54,7 +54,6 @@ const perfumes = [
         available: true
     },
 
-
     {
         name: "Marwa",
         brand: "Arabiyat Prestige",
@@ -80,7 +79,6 @@ const perfumes = [
 
         available: true
     },
-
 
     {
         name: "Hawas Kobra",
@@ -132,7 +130,8 @@ const perfumes = [
         },
 
         available: true
-    }
+    },
+
     {
         name: "Odyssey Limoni",
         brand: "Armaf",
@@ -158,7 +157,6 @@ const perfumes = [
 
         available: true
     },
-
 
     {
         name: "Opulent Dubai",
@@ -186,8 +184,6 @@ const perfumes = [
         available: true
     },
 
-
-
     {
         name: "At Dawn",
         brand: "MINISO",
@@ -212,7 +208,6 @@ const perfumes = [
 
         available: true
     },
-
 
     {
         name: "Mountain Night",
@@ -239,8 +234,7 @@ const perfumes = [
         available: true
     },
 
-
- {
+    {
         name: "Hawas Fire",
         brand: "Rasasi",
         image: "images/fire.jpg",
@@ -268,7 +262,7 @@ const perfumes = [
         ],
 
         available: false
-    },
+    }
 
 ];
 
@@ -279,232 +273,257 @@ const perfumes = [
 
 const perfumeContainer = document.getElementById("perfume-container");
 
+if (perfumeContainer) {
 
-perfumes.forEach((perfume) => {
+    perfumes.forEach((perfume) => {
 
-    const card = document.createElement("article");
+        const card = document.createElement("article");
 
-    card.className = "perfume-card";
+        card.className = "perfume-card";
 
 
-    // Create price rows
+        // ======================================
+        // CREATE PRICE ROWS
+        // ======================================
 
-    const priceRows = Object.entries(perfume.prices)
-        .map(([size, price]) => {
+        const priceRows = Object.entries(perfume.prices)
+            .map(([size, price]) => {
 
-            const isUnavailable =
-                perfume.unavailableSizes &&
-                perfume.unavailableSizes.includes(size);
+                const isUnavailable =
+                    perfume.unavailableSizes &&
+                    perfume.unavailableSizes.includes(size);
 
-            return `
-                <div class="price-row">
-                    <span>${size}</span>
+                return `
+                    <div class="price-row">
+
+                        <span>${size}</span>
+
+                        ${
+                            isUnavailable
+                                ? `<strong class="out-of-stock-size">Out of Stock</strong>`
+                                : `<strong>৳${price.toLocaleString()}</strong>`
+                        }
+
+                    </div>
+                `;
+
+            })
+            .join("");
+
+
+        // ======================================
+        // WHATSAPP MESSAGE
+        // ======================================
+
+        const whatsappMessage = encodeURIComponent(
+            `Hello! I am interested in ${perfume.name} by ${perfume.brand}.`
+        );
+
+
+        // ======================================
+        // PRODUCT CARD
+        // ======================================
+
+        card.innerHTML = `
+
+            <!-- PRODUCT IMAGE -->
+
+            <div class="product-image">
+
+                <img
+                    src="${perfume.image}"
+                    alt="${perfume.name} perfume"
+                >
+
+            </div>
+
+
+            <!-- PRODUCT INFORMATION -->
+
+            <div class="product-info">
+
+
+                <!-- NAME -->
+
+                <h3>${perfume.name}</h3>
+
+
+                <!-- BRAND -->
+
+                <p class="brand-name">
+                    ${perfume.brand}
+                </p>
+
+
+                <!-- SHORT SCENT DESCRIPTION -->
+
+                <p class="scent-summary">
+                    ${perfume.smell}
+                </p>
+
+
+                <!-- PRICES -->
+
+                <div class="price-section">
+
+                    <h4>Available Sizes</h4>
+
+                    ${priceRows}
+
+                </div>
+
+
+                <!-- AVAILABILITY -->
+
+                <p class="
+                    availability
+                    ${perfume.available ? "in-stock" : "out-of-stock"}
+                ">
 
                     ${
-                        isUnavailable
-                            ? `<strong class="out-of-stock-size">Out of Stock</strong>`
-                            : `<strong>৳${price.toLocaleString()}</strong>`
+                        perfume.available
+                            ? "✓ Available"
+                            : "Currently Unavailable"
                     }
-                </div>
-            `;
 
-        })
-        .join("");
+                </p>
 
 
-    // WhatsApp message
+                <!-- VIEW DETAILS BUTTON -->
 
-    const whatsappMessage = encodeURIComponent(
-        `Hello! I am interested in ${perfume.name} by ${perfume.brand}.`
-    );
-
-
-    card.innerHTML = `
-
-        <!-- PRODUCT IMAGE -->
-
-        <div class="product-image">
-
-            <img
-                src="${perfume.image}"
-                alt="${perfume.name} perfume"
-            >
-
-        </div>
+                <button
+                    class="details-button"
+                    type="button"
+                >
+                    View Details
+                </button>
 
 
-        <!-- PRODUCT INFORMATION -->
+                <!-- HIDDEN DETAILS -->
 
-        <div class="product-info">
-
-
-            <!-- NAME -->
-
-            <h3>${perfume.name}</h3>
+                <div class="product-details">
 
 
-            <!-- BRAND -->
+                    <!-- FRAGRANCE NOTES -->
 
-            <p class="brand-name">
-                ${perfume.brand}
-            </p>
+                    <div class="detail-item">
 
+                        <h4>
+                            Fragrance Notes
+                        </h4>
 
-            <!-- SHORT SCENT DESCRIPTION -->
+                        <p>
+                            ${perfume.notes}
+                        </p>
 
-            <p class="scent-summary">
-                ${perfume.smell}
-            </p>
-
-
-            <!-- PRICES -->
-
-            <div class="price-section">
-
-                <h4>Available Sizes</h4>
-
-                ${priceRows}
-
-            </div>
+                    </div>
 
 
-            <!-- AVAILABILITY -->
+                    <!-- HOW DOES IT SMELL -->
 
-            <p class="
-                availability
-                ${perfume.available ? "in-stock" : "out-of-stock"}
-            ">
+                    <div class="detail-item">
 
-                ${
-                    perfume.available
-                        ? "✓ Available"
-                        : "Currently Unavailable"
-                }
+                        <h4>
+                            How Does It Smell?
+                        </h4>
 
-            </p>
+                        <p>
+                            ${perfume.smell}
+                        </p>
 
-
-            <!-- VIEW DETAILS BUTTON -->
-
-            <button
-                class="details-button"
-                type="button"
-            >
-                View Details
-            </button>
+                    </div>
 
 
-            <!-- HIDDEN DETAILS -->
+                    <!-- BEST FOR -->
 
-            <div class="product-details">
+                    <div class="detail-item">
+
+                        <h4>
+                            Best For
+                        </h4>
+
+                        <p>
+                            ${perfume.occasions}
+                        </p>
+
+                    </div>
 
 
-                <div class="detail-item">
+                    <!-- BEST SEASON -->
 
-                    <h4>
-                        Fragrance Notes
-                    </h4>
+                    <div class="detail-item">
 
-                    <p>
-                        ${perfume.notes}
-                    </p>
+                        <h4>
+                            Best Season
+                        </h4>
+
+                        <p>
+                            ${perfume.season}
+                        </p>
+
+                    </div>
+
 
                 </div>
 
 
-                <div class="detail-item">
+                <!-- WHATSAPP BUTTON -->
 
-                    <h4>
-                        How Does It Smell?
-                    </h4>
-
-                    <p>
-                        ${perfume.smell}
-                    </p>
-
-                </div>
-
-
-                <div class="detail-item">
-
-                    <h4>
-                        Best For
-                    </h4>
-
-                    <p>
-                        ${perfume.occasions}
-                    </p>
-
-                </div>
-
-
-                <div class="detail-item">
-
-                    <h4>
-                        Best Season
-                    </h4>
-
-                    <p>
-                        ${perfume.season}
-                    </p>
-
-                </div>
+                <a
+                    href="https://wa.me/${whatsappNumber}?text=${whatsappMessage}"
+                    class="whatsapp-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Order on WhatsApp
+                </a>
 
 
             </div>
 
-
-            <!-- WHATSAPP BUTTON -->
-
-            <a
-                href="https://wa.me/${whatsappNumber}?text=${whatsappMessage}"
-                class="whatsapp-button"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Order on WhatsApp
-            </a>
+        `;
 
 
-        </div>
+        // ======================================
+        // ADD CARD TO PAGE
+        // ======================================
 
-    `;
-
-
-    perfumeContainer.appendChild(card);
-
-
-    // ======================================
-    // VIEW DETAILS FUNCTION
-    // ======================================
-
-    const detailsButton =
-        card.querySelector(".details-button");
-
-    const productDetails =
-        card.querySelector(".product-details");
+        perfumeContainer.appendChild(card);
 
 
-    detailsButton.addEventListener("click", () => {
+        // ======================================
+        // VIEW DETAILS FUNCTION
+        // ======================================
 
-        productDetails.classList.toggle("show");
+        const detailsButton =
+            card.querySelector(".details-button");
+
+        const productDetails =
+            card.querySelector(".product-details");
 
 
-        if (productDetails.classList.contains("show")) {
+        detailsButton.addEventListener("click", () => {
 
-            detailsButton.textContent =
-                "Hide Details";
+            productDetails.classList.toggle("show");
 
-        } else {
 
-            detailsButton.textContent =
-                "View Details";
+            if (productDetails.classList.contains("show")) {
 
-        }
+                detailsButton.textContent =
+                    "Hide Details";
+
+            } else {
+
+                detailsButton.textContent =
+                    "View Details";
+
+            }
+
+        });
 
     });
 
-});
+}
 
 
 // ==========================================
@@ -513,16 +532,20 @@ perfumes.forEach((perfume) => {
 
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", () => {
+if (header) {
 
-    if (window.scrollY > 50) {
+    window.addEventListener("scroll", () => {
 
-        header.classList.add("scrolled");
+        if (window.scrollY > 50) {
 
-    } else {
+            header.classList.add("scrolled");
 
-        header.classList.remove("scrolled");
+        } else {
 
-    }
+            header.classList.remove("scrolled");
 
-});
+        }
+
+    });
+
+}
