@@ -20,9 +20,9 @@ const perfumes = [
             "Spring, Summer and Autumn",
 
         prices: {
-            "5 ml": 325,
+            "5 ml": 360,
             "10 ml": 610,
-            "30 ml": 1600
+            "30 ml": 1699
         },
 
         available: true
@@ -46,9 +46,9 @@ const perfumes = [
             "Autumn and Winter",
 
         prices: {
-            "5 ml": 330,
-            "10 ml": 610,
-            "30 ml": 1800
+            "5 ml": 360,
+            "10 ml": 599,
+            "30 ml": 1699
         },
 
         available: true
@@ -72,9 +72,9 @@ const perfumes = [
             "Spring, Summer and Autumn",
 
         prices: {
-            "5 ml": 320,
-            "10 ml": 600,
-            "30 ml": 1790
+            "5 ml": 350,
+            "10 ml": 599,
+            "30 ml": 1599
         },
 
         available: true
@@ -98,9 +98,9 @@ const perfumes = [
             "Spring, Summer and Autumn",
 
         prices: {
-            "5 ml": 260,
-            "10 ml": 490,
-            "30 ml": 1300
+            "5 ml": 270,
+            "10 ml": 499,
+            "30 ml": 1299
         },
 
         available: true
@@ -124,9 +124,9 @@ const perfumes = [
             "Autumn and Winter",
 
         prices: {
-            "5 ml": 250,
-            "10 ml": 480,
-            "30 ml": 1300
+            "5 ml": 270,
+            "10 ml": 499,
+            "30 ml": 1299
         },
 
         available: true
@@ -152,7 +152,7 @@ const perfumes = [
         prices: {
             "5 ml": 280,
             "10 ml": 530,
-            "30 ml": 1500
+            "30 ml": 1399
         },
 
         available: true
@@ -178,7 +178,7 @@ const perfumes = [
         prices: {
             "5 ml": 210,
             "10 ml": 380,
-            "30 ml": 980
+            "30 ml": 999
         },
 
         available: true
