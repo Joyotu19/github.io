@@ -105,6 +105,30 @@ const perfumes = [
 
         available: true
     },
+	{
+    name: "Energy of Coolness",
+    brand: "MINISO",
+    image: "images/energy.jpg",
+
+    notes:
+        "Citrus, Marine Notes, Jasmine, Lavender, Musk and Amber.",
+
+    smell:
+        "Fresh, clean and invigorating, combining bright citrus and aquatic notes with a gentle floral heart and a smooth musky, amber finish.",
+
+    occasions:
+        "Daily wear, university, office, casual outings and daytime activities.",
+
+    season:
+        "Spring and Summer",
+
+    prices: {
+        "5 ml": 200,
+        "10 ml": 350
+    },
+
+    available: true
+},
 
     {
         name: "Asad",
