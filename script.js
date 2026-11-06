@@ -56,7 +56,7 @@ const perfumes = [
 {
     name: "Club de Nuit Iconic",
     brand: "Armaf",
-    image: "images/iconic.jpg",
+    image: "images/iconic.png",
 
     notes:
         "Grapefruit, Lemon, Mint, Pink Pepper, Coriander, Ginger, Nutmeg, Jasmine, Melon, Incense, Amber, Cedar, Sandalwood, Patchouli and Labdanum.",
