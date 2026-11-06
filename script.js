@@ -21,7 +21,7 @@ const perfumes = [
 
         prices: {
             "5 ml": 360,
-            "10 ml": 610,
+            "10 ml": 599,
             "30 ml": 1699
         },
 
@@ -72,8 +72,8 @@ const perfumes = [
 
     prices: {
         "5 ml": 360,
-        "10 ml": 650,
-        "30 ml": 1750
+        "10 ml": 599,
+        "30 ml": 1699
     },
 
     available: true
