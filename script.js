@@ -53,6 +53,31 @@ const perfumes = [
 
         available: true
     },
+{
+    name: "Club de Nuit Iconic",
+    brand: "Armaf",
+    image: "images/iconic.jpg",
+
+    notes:
+        "Grapefruit, Lemon, Mint, Pink Pepper, Coriander, Ginger, Nutmeg, Jasmine, Melon, Incense, Amber, Cedar, Sandalwood, Patchouli and Labdanum.",
+
+    smell:
+        "A refreshing citrus opening with grapefruit, lemon and mint, followed by aromatic spices and a smooth woody, amber and incense finish. Widely appreciated as a close alternative to Bleu de Chanel.",
+
+    occasions:
+        "Daily wear, office, business meetings, casual outings, dates and special occasions.",
+
+    season:
+        "Spring, Summer and Autumn",
+
+    prices: {
+        "5 ml": 360,
+        "10 ml": 650,
+        "30 ml": 1750
+    },
+
+    available: true
+},
 
     {
         name: "Marwa",
